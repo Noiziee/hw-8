@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>lesson-8</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="recipient-data">
+    <div class="container">
+      <div class="recipient-data__inner">
+        <form class="form-user" action="">
+          <fieldset class="fieldset">
+            <legend class="form-user__title title">Данные получателя</legend>
+            <div class="form-user__item">
+              <input class="form-user__input" type="text" name="user_last_name" placeholder="Фамилия" required>
+              <input class="form-user__input" type="text" name="user_first_name" placeholder="Имя" required>
+              <input class="form-user__input" type="text" name="user_sur_name" placeholder="Отчество" required>
+            </div>
+            <div class="form-user__item">
+              <input class="form-user__input-phone form-user__input" type="number" id="userPhone" name="user_phone"
+                placeholder="Номер телефона" required>
+              <label for="userPhone">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</label>
+            </div>
+            <div class="form-user__item">
+              <input class="form-user__input-email form-user__input" type="email" id="userEmail" name="user_email"
+                placeholder="E-mail" required>
+              <label for="userEmail">
+                На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания
+              </label>
+            </div>
+            <input class="form-user__checkbox" type="checkbox" name="subscribe" id="checkbox" checked>
+            <label for="checkbox">Подписаться на рассылку новинок и акций</label>
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="form-user__title title form-user__title_indent">Способ оплаты</legend>
+            <div class="form-user__item form-user__item_radio-indent">
+              <input class="form-user__radio" type="radio" name="payment" id="user_payment">
+              <label for="user_payment">Оплата при получении наличными или картой</label>
+            </div>
+            <div class="form-user__item">
+              <input class="form-user__radio" type="radio" name="payment" id="user_payment_card" checked>
+              <label for="user_payment_card">Оплата при получении наличными или картой</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
